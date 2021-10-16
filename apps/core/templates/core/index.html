@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        <a href="{% url 'logout' %}">Logout</a>
+      </div>
+    </div>
+</div>
+   
+{% endblock %}
