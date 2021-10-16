@@ -19,7 +19,9 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.core.urls')),
-    path('funcionarios/', include('apps.funcionarios.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('apps.core.urls')),
+    path('empresas/', include('apps.empresas.urls')),
+    path('funcionarios/', include('apps.funcionarios.urls')),
+    path('departamentos/', include('apps.departamentos.urls')),
 ]
