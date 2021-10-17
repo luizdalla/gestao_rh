@@ -5,9 +5,6 @@ from django.urls import reverse_lazy
 from apps.funcionarios.models import Funcionario
 from django.contrib.auth.models import User
 
-# def home(request):
-#     return HttpResponse('Ola')
-
 
 class FuncionariosList(ListView):
     model = Funcionario

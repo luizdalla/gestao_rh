@@ -10,6 +10,16 @@ Edit
     
     {{ form|bootstrap }}
     <button type="submit" class="btn btn-primary">Salvar</button>
+    {% if object %}
+    <a href="{% url 'delete_horaextra' object.id %}" class="btn btn-danger">
+        Deletar
+    </a>
+    {% endif %}
+
 </form>
+
+
+
+
 
 {% endblock %}
