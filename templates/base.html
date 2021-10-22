@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <title>{% block title %} {% endblock %}</title>
+    {% block staticcss %}
+    {% endblock %}
 </head>
 <body>
     <div class="container">
         {% block main %} {% endblock %}
     </div>
+    
+    {% block static %}
+    {% endblock %}
     
 </body>
 </html>

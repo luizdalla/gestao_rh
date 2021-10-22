@@ -136,7 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # lista com os locais onde o django vai procurar arquivos estaticos
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    # BASE_DIR / "static",
+    os.path.join(BASE_DIR, "staticfiles")
 ]
 
 # local que ira receber os arquivos estaticos centralizados
